@@ -1,0 +1,114 @@
+import { useTranslation } from 'react-i18next';
+  
+const TimezoneList = ({ control, field }) => {  
+    const { t } = useTranslation();
+  
+    return (
+        <select {...field} className="bg-1">
+            <option disabled selected>{t("Fuso horário")}</option>
+            <option value="Pacific/Midway">(UTC-11:00) Midway Island, American Samoa</option>
+            <option value="Pacific/Honolulu">(UTC-10:00) Hawaii</option>
+            <option value="America/Anchorage">(UTC-08:00) Alaska</option>
+            <option value="America/Tijuana">(UTC-07:00) Baja California</option>
+            <option value="America/Los_Angeles">(UTC-07:00) Pacific Time (US and Canada)</option>
+            <option value="America/Phoenix">(UTC-07:00) Arizona</option>
+            <option value="America/Chihuahua">(UTC-06:00) Chihuahua, La Paz, Mazatlan</option>
+            <option value="America/Denver">(UTC-06:00) Mountain Time (US and Canada)</option>
+            <option value="America/Belize">(UTC-06:00) Central America</option>
+            <option value="America/Chicago">(UTC-05:00) Central Time (US and Canada)	</option>
+            <option value="America/Mexico_City">(UTC-05:00) Guadalajara, Mexico City, Monterrey</option>
+            <option value="America/Regina">(UTC-06:00) Saskatchewan</option>
+            <option value="America/Bogota">(UTC-05:00) Bogota, Lima, Quito</option>
+            <option value="America/Jamaica">(UTC-05:00) Kingston, George Town</option>
+            <option value="America/New_York">(UTC-04:00) Eastern Time (US and Canada)</option>
+            <option value="America/Indiana/Indianapolis">(UTC-04:00) Indiana (East)</option>
+            <option value="America/Caracas">(UTC-04:30) Caracas</option>
+            <option value="America/Asuncion">(UTC-03:00) Asuncion</option>
+            <option value="America/Halifax">(UTC-03:00) Atlantic Time (Canada)</option>
+            <option value="America/Cuiaba">(UTC-04:00) Cuiaba</option>
+            <option value="America/Manaus">(UTC-04:00) Georgetown, La Paz, Manaus, San Juan</option>
+            <option value="America/St_Johns">(UTC-02:30) Newfoundland and Labrador</option>
+            <option value="America/Sao_Paulo">(UTC-03:00) Brasilia</option>
+            <option value="America/Buenos_Aires">(UTC-03:00) Buenos Aires</option>
+            <option value="America/Cayenne">(UTC-03:00) Cayenne, Fortaleza</option>
+            <option value="America/Godthab">(UTC-02:00) Greenland</option>
+            <option value="America/Montevideo">(UTC-03:00) Montevideo</option>
+            <option value="America/Bahia">(UTC-03:00) Salvador</option>
+            <option value="America/Santiago">(UTC-03:00) Santiago</option>
+            <option value="America/Noronha">(UTC-02:00) Mid-Atlantic</option>
+            <option value="Atlantic/Azores">(UTC+00:00) Azores</option>
+            <option value="Atlantic/Cape_Verde">(UTC-01:00) Cape Verde Islands</option>
+            <option value="Europe/London">(UTC+01:00) Dublin, Edinburgh, Lisbon, London</option>
+            <option value="Africa/Casablanca">(UTC+01:00) Casablanca</option>
+            <option value="Africa/Monrovia">(UTC+00:00) Monrovia, Reykjavik</option>
+            <option value="Europe/Amsterdam">(UTC+02:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+            <option value="Europe/Belgrade">(UTC+02:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+            <option value="Europe/Brussels">(UTC+02:00) Brussels, Copenhagen, Madrid, Paris</option>
+            <option value="Europe/Warsaw">(UTC+02:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+            <option value="Africa/Algiers">(UTC+01:00) West Central Africa</option>
+            <option value="Africa/Windhoek">(UTC+02:00) Windhoek</option>
+            <option value="Europe/Athens">(UTC+03:00) Athens, Bucharest</option>
+            <option value="Asia/Beirut">(UTC+03:00) Beirut</option>
+            <option value="Africa/Cairo">(UTC+02:00) Cairo</option>
+            <option value="Asia/Damascus">(UTC+03:00) Damascus</option>
+            <option value="EET">(UTC+03:00) Eastern Europe</option>
+            <option value="Africa/Harare">(UTC+02:00) Harare, Pretoria</option>
+            <option value="Europe/Helsinki">(UTC+03:00) Helsinki, Kiev, Riga, Sofia, Tallinn, Vilnius</option>
+            <option value="Asia/Istanbul">(UTC+03:00) Istanbul</option>
+            <option value="Asia/Jerusalem">(UTC+03:00) Jerusalem</option>
+            <option value="Europe/Kaliningrad">(UTC+02:00) Kaliningrad</option>
+            <option value="Africa/Tripoli">(UTC+02:00) Tripoli</option>
+            <option value="Asia/Amman">(UTC+03:00) Amman</option>
+            <option value="Asia/Baghdad">(UTC+03:00) Baghdad</option>
+            <option value="Asia/Kuwait">(UTC+03:00) Kuwait, Riyadh</option>
+            <option value="Europe/Minsk">(UTC+03:00) Minsk</option>
+            <option value="Europe/Moscow">(UTC+03:00) Moscow, St. Petersburg, Volgograd</option>
+            <option value="Africa/Nairobi">(UTC+03:00) Nairobi</option>
+            <option value="Asia/Tehran">(UTC+03:30) Tehran</option>
+            <option value="Asia/Muscat">(UTC+04:00) Abu Dhabi, Muscat</option>
+            <option value="Asia/Baku">(UTC+05:00) Baku</option>
+            <option value="Europe/Samara">(UTC+04:00) Izhevsk, Samara</option>
+            <option value="Indian/Mauritius">(UTC+04:00) Port Louis</option>
+            <option value="Asia/Tbilisi">(UTC+04:00) Tbilisi</option>
+            <option value="Asia/Yerevan">(UTC+04:00) Yerevan</option>
+            <option value="Asia/Kabul">(UTC+04:30) Kabul</option>
+            <option value="Asia/Tashkent">(UTC+05:00) Tashkent, Ashgabat</option>
+            <option value="Asia/Yekaterinburg">(UTC+05:00) Ekaterinburg</option>
+            <option value="Asia/Karachi">(UTC+05:00) Islamabad, Karachi</option>
+            <option value="Asia/Kolkata">(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+            <option value="Asia/Colombo">(UTC+05:30) Sri Jayawardenepura</option>
+            <option value="Asia/Katmandu">(UTC+05:45) Kathmandu</option>
+            <option value="Asia/Almaty">(UTC+06:00) Astana</option>
+            <option value="Asia/Dhaka">(UTC+06:00) Dhaka</option>
+            <option value="Asia/Novosibirsk">(UTC+06:00) Novosibirsk</option>
+            <option value="Asia/Rangoon">(UTC+06:30) Yangon (Rangoon)</option>
+            <option value="Asia/Bangkok">(UTC+07:00) Bangkok, Hanoi, Jakarta</option>
+            <option value="Asia/Krasnoyarsk">(UTC+07:00) Krasnoyarsk</option>
+            <option value="Asia/Chongqing">(UTC+08:00) Beijing, Chongqing, Hong Kong SAR, Urumqi</option>
+            <option value="Asia/Irkutsk">(UTC+08:00) Irkutsk</option>
+            <option value="Asia/Kuala_Lumpur">(UTC+08:00) Kuala Lumpur, Singapore</option>
+            <option value="Australia/Perth">(UTC+08:00) Perth</option>
+            <option value="Asia/Taipei">(UTC+08:00) Taipei</option>
+            <option value="Asia/Ulaanbaatar">(UTC+08:00) Ulaanbaatar</option>
+            <option value="Asia/Tokyo">(UTC+09:00) Osaka, Sapporo, Tokyo</option>
+            <option value="Asia/Seoul">(UTC+09:00) Seoul</option>
+            <option value="Asia/Yakutsk">(UTC+09:00) Yakutsk</option>
+            <option value="Australia/Adelaide">(UTC+10:30) Adelaide</option>
+            <option value="Australia/Darwin">(UTC+09:30) Darwin</option>
+            <option value="Australia/Brisbane">(UTC+10:00) Brisbane</option>
+            <option value="Australia/Canberra">(UTC+11:00) Canberra, Melbourne, Sydney</option>
+            <option value="Pacific/Guam">(UTC+10:00) Guam, Port Moresby</option>
+            <option value="Australia/Hobart">(UTC+11:00) Hobart</option>
+            <option value="Asia/Magadan">(UTC+10:00) Magadan</option>
+            <option value="Asia/Vladivostok">(UTC+10:00) Vladivostok, Magadan</option>
+            <option value="Asia/Srednekolymsk">(UTC+11:00) Chokirdakh</option>
+            <option value="Pacific/Guadalcanal">(UTC+11:00) Solomon Islands, New Caledonia</option>
+            <option value="Asia/Anadyr">(UTC+12:00) Anadyr, Petropavlovsk-Kamchatsky</option>
+            <option value="Pacific/Auckland">(UTC+13:00) Auckland, Wellington</option>
+            <option value="Pacific/Fiji">(UTC+12:00) Fiji Islands, Kamchatka, Marshall Islands</option>
+            <option value="Pacific/Tongatapu">(UTC+13:00) Nuku alofa</option>
+            <option value="Pacific/Apia">(UTC+14:00) Samoa</option>
+        </select>
+    )
+}
+export default TimezoneList

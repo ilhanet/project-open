@@ -1,0 +1,118 @@
+#Posts
+    .headerMenu        
+        .headerItem
+            padding: 13px
+            display: flex
+            align-items: center
+            cursor: pointer
+
+            svg
+                width: 25px
+                height: 25px
+    
+    .noBorder
+        border: none
+            
+    #Post
+        p
+            cursor: default
+
+        .video-gallery
+            margin-top: 13px
+
+        .msgVideo
+            width: max-content
+            font-size: 13px
+            font-weight: 600
+            margin: 6px 0px
+
+            span
+                display: flex
+                align-items: center
+                gap: 3px
+
+        .postFooter2
+            display: flex
+            align-items: flex-start
+            flex-direction: column
+            gap: 4px
+            margin-top: 12px
+
+        .cursorDefault
+            cursor: default !important
+
+        .pfItem
+            font-size: 15px
+            cursor: pointer
+            
+            svg
+                width: 18px
+                height: 18px
+
+        .pfDateTime
+            font-size: 14px
+            font-weight: 600
+            cursor: default
+
+        .buttonShareX
+            font-size: 14px
+            font-weight: 600
+            margin-top: 12px
+            background-color: #000
+            color: #fff
+            border: 1px solid #ccc
+            width: 100%
+            border-radius: 20px
+            transition: 0.3s
+
+            a
+                width: 100%
+                padding: 6px 17px
+                display: flex
+                justify-content: center
+                gap: 8px
+
+            img
+                width: 17px
+
+        .buttonShareX:hover
+            background-color: #2e2d2d
+
+    #Post:hover
+        background-color: transparent
+
+    iframe 
+        height: 55vh
+        margin-top: 17px
+
+        @media (max-width: 400px)
+            height: 40vh
+
+    .video-react
+        height: 400px !important
+        max-height: 400px
+        padding: 0 !important
+
+        @media (max-width: 550px)
+            height: 250px !important
+        
+    .video-react-video
+        height: 100%
+
+    #Comments
+        width: 100%
+        padding: 13px
+
+        .NoItems
+            display: block
+
+        .info-alert
+            cursor: pointer
+            transition: 0.3s
+
+        .info-alert:hover
+            background-color: hsl(var(--accent))
+
+.ArticlePost
+    .Main, .headerBack
+        max-width: 700px

@@ -1,0 +1,150 @@
+@import url('./styles/fonts/inter.css');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.dark .col-1 {
+  color: #fff; }
+
+.dark .col-2 {
+  color: #fff; }
+
+.dark .col-3 {
+  color: #fff; }
+
+.dark .col-4 {
+    color: #ff8199; }  
+
+.dark {
+  background: hsl(var(--background)) }  
+
+.dark .bg-1 {
+  background: hsl(var(--background)) }
+
+.dark .bg-2 {
+  background-color: #000; }  
+
+.dark .bor-2 {
+  border-color: #fff; }  
+    
+.dark .bor-2 {
+  border-color: #fff; }  
+
+.light .col-1 {
+  color: #000; }
+
+.light .col-2 {
+  color: #3f3f3f; }
+
+.light .col-3 {
+  color: #395FEA; }  
+
+.col-blue {
+  color: #395FEA; }  
+  
+.light .col-4 {
+  color: crimson; }    
+
+.light .bg-1 {
+  background-color: #fff; }
+
+.light .bor-1 {
+  border-color: #395FEA; }  
+
+.light .bor-2 {
+  border-color: #000; }    
+
+.light {
+  background-color: #fff; }  
+
+.light ::-webkit-scrollbar {
+  width: 15px;
+  background-color: #fff;
+}
+.light ::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #ccc;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background-color: #3c3c3c;
+}
+
+.dark ::-webkit-scrollbar {
+  width: 15px;
+  background-color: #061336;
+}
+.dark ::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #a7a5a5;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc;
+}
+
+.toaster {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem; /* Ajusta a posição para a esquerda */
+  z-index: 1000; /* Para garantir que as notificações apareçam sobre outros conteúdos */
+}
+
+@media (max-width: 600px) {
+  .toaster {
+    bottom: 5rem !important;
+  }
+}
+
+
+[data-tooltip] {
+  position: relative;
+  display: flex !important;
+  justify-content: left;
+}
+
+[data-tooltip]:after {
+  position: absolute;
+  cursor: default;
+
+  top: 115%;
+  text-align: center;
+  box-sizing: border-box;
+  content: attr(data-tooltip);
+  color: #fff;
+  background-color: #3c3c3c;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 4;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+[data-tooltip]:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+iframe {
+  body {
+    overflow: hidden !important;
+  }
+}
+
+@media (max-width: 600px) {
+  [data-tooltip]:hover:after {
+      display: none;
+  }
+}
+

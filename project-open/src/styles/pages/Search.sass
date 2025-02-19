@@ -1,0 +1,122 @@
+#Search
+    .headerPage
+        width: 100%
+        padding: 13px
+        cursor: default
+
+    .inputSearch
+        display: flex
+        justify-content: flex-end
+        padding: 10px
+
+        input
+            padding-right: 38px
+
+        .focus-visible\:ring-offset-2:focus-visible 
+            --tw-ring-offset-width: none
+
+        .buttonSearch
+            position: absolute
+            padding: 8px
+            cursor: pointer
+
+    .Main
+        a
+            width: 100%
+
+    .buttonStatus
+        font-size: 12px
+        font-weight: 500
+        border: 1px solid #ccc
+        width: max-content
+        padding: 0px 9px
+        border-radius: 20px
+        margin-top: 2px
+        
+    .userItem
+        gap: 9px
+        display: flex
+        align-items: center
+        padding: 10px 13px
+
+        h1
+            font-size: 15px
+            margin: 0px
+            font-weight: bold
+            height: 21px
+
+        span
+            font-size: 13px
+            height: 20px
+
+        .Details
+            gap: 0
+            display: grid
+
+            .followers
+                font-weight: 500
+
+            .Username
+                display: flex
+                align-items: center
+                gap: 3px
+                height: 20px
+
+                button
+                    cursor: default
+
+                .verified1
+                    width: 100%
+                    max-width: 1.1rem
+                    max-height: 1.1rem
+                    color: #395FEA
+
+        a
+            display: flex
+            gap: 8px
+            align-items: center
+
+        img
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            background-color: #ccc
+
+    .trending
+        width: 100%
+
+        h1
+            padding: 9px 12px
+            margin-bottom: 0px
+            border-bottom: 1px solid #ccc
+            font-size: 15px
+            font-weight: 600
+            cursor: default
+
+        ul
+            display: flex
+            flex-direction: column
+
+            li
+                display: flex
+                flex-direction: column
+                padding: 10px 12px
+                border-bottom: 1px solid #ccc
+                cursor: pointer
+                transition: 0.3s
+
+                h3
+                    margin: 0
+                    font-size: 15px
+                    font-weight: 600
+
+                span
+                    font-size: 13px
+                    font-weight: 500
+
+            li:hover
+                background-color: hsl(var(--accent))
+
+        .NoItems
+            font-weight: 500
+            padding: 10px

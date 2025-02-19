@@ -1,0 +1,740 @@
+.Container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .Header
+        display: flex
+        align-items: center
+        width: 100%
+        height: 56px
+        border-bottom: 1px solid #ccc
+        position: fixed
+        top: 0
+        z-index: 2
+        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 37%)
+
+        .headerMain
+            display: flex
+            align-items: center
+            padding: 10px
+            width: 100%
+
+            .logo
+                flex: 1
+                visibility: hidden
+
+                img
+                    width: 44px
+                    height: 44px
+                    cursor: pointer
+
+            @media (max-width: 850px)
+                .logo
+                    visibility: visible
+
+            .imgUser
+                width: 35px
+                height: 35px
+                border-radius: 50%
+                background-color: #ccc
+                cursor: pointer
+
+        .headerMain2
+            display: flex
+            align-items: center
+            gap: 12px
+
+            svg
+                width: 25px
+                height: 25px
+
+            .notification
+                display: flex
+                justify-content: flex-end
+
+                svg
+                    width: 27px
+                    height: 27px
+
+                .alertNy
+                    background-color: #ff0030
+                    width: 10px
+                    height: 10px
+                    margin-right: 2px
+                    position: absolute
+                    border-radius: 50%
+
+    .headerMenu
+        box-shadow: none
+        top: 55px
+        z-index: 1
+        max-width: 550px
+        border-bottom: 1px solid
+        border-color: #7c7c7c
+
+        @media (min-width: 600px)
+            border: 1px solid
+            border-color: #ccc
+
+        @media (max-width: 600px)
+            max-width: none
+
+        @media (min-width: 1300px)
+            max-width: 665px
+
+        a
+            width: 100%
+
+        .Item
+            display: flex
+            width: 100%
+            cursor: pointer
+            height: 55px
+            font-size: 15px
+            font-weight: 600
+            border-bottom: 3px solid
+            border-color: transparent
+            justify-content: center
+            align-items: center
+
+        .itemActive
+            border-color: #395FEA
+
+    .headerBack
+        display: flex
+        align-items: center
+        width: 100%
+        height: 56px
+        border-bottom: 1px solid #ccc
+        position: fixed
+        top: 0px
+        z-index: 1
+        max-width: 550px
+
+        .hbButton
+            padding: 13px
+            display: flex
+            align-items: center
+            cursor: pointer
+
+            svg
+                width: 25px
+                height: 25px
+
+        @media (min-width: 600px)
+            border: 1px solid
+            border-color: #ccc
+
+        @media (max-width: 600px)
+            max-width: none
+            border: none
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28)
+
+        @media (min-width: 1300px)
+            max-width: 665px
+
+    .Menu
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        position: fixed
+        left: 0
+        z-index: 3
+        border-right: 1px solid #ccc
+        width: 70px
+        height: 100%
+        flex-direction: column
+
+        @media (max-width: 850px)
+            justify-content: center
+            bottom: 0
+            width: 100%
+            height: auto
+            flex-direction: row
+            border-top: 1px solid #ccc
+            border-right: 0px
+
+        .logo
+            padding-top: 10px
+            margin-bottom: 75px
+
+            img
+                width: 44px
+                height: 44px
+                cursor: pointer
+
+            @media (max-width: 850px)
+                display: none
+
+        .menuItem
+            display: flex
+            width: 70px
+            padding: 15px
+            gap: 3px
+            font-size: 13px
+            font-weight: 600
+            flex-direction: column
+            align-items: center
+            cursor: pointer
+
+            @media (max-width: 600px)
+                width: 63px
+        
+        .active
+            color: #395FEA
+
+        @media (max-width: 600px)
+            span
+                display: none
+
+    .hm-mtop
+        margin-top: 108px !important
+
+    .Main
+        display: flex
+        align-items: center
+        flex-direction: column
+
+        max-width: 550px
+        width: 100%
+        min-height: 94vh
+        margin-top: 55px
+        margin-bottom: 0px
+        padding-bottom: 15px
+        border-width: 0px 1px
+        border-color: #ccc
+
+        @media (max-width: 720px)
+            margin-bottom: 80px
+            min-height: 88vh
+
+            p
+                font-size: 15px
+
+        @media (max-width: 600px)
+            border: none
+            max-width: none
+
+        @media (min-width: 1300px)
+            max-width: 665px
+
+        .loadingPosts
+            width: 100%
+            margin-bottom: 5px
+            display: flex
+            justify-content: center
+            background-color: hsl(var(--accent))
+
+        .loadingPosts2
+            width: 100%
+            display: flex
+            justify-content: center
+
+    form
+        width: 100%
+        padding: 15px
+        padding-bottom: 35px
+        gap: 15px
+
+        h1
+            font-size: 1.1rem
+            font-weight: bold
+            cursor: default
+
+        p
+            cursor: default
+
+        .detailsInput
+            display: flex
+            align-items: center
+            gap: 10px
+            padding-top: 5px
+        
+        .focus-visible\:ring-offset-2:focus-visible,
+        .focus\:ring-offset-2
+            --tw-ring-offset-width: none
+
+        .twitterPost
+            display: flex
+            align-items: center
+            margin-top: 10px !important
+
+        label
+            font-size: 15px
+            font-weight: 600
+            margin-bottom: 5px
+            flex: 1
+
+        button
+            border-radius: 20px
+            font-weight: 600
+
+        button[role="combobox"]
+            border-radius: 5px
+
+        div
+            margin-top: 0px !important
+
+        textarea
+            resize: none
+            height: 170px
+
+        .countText
+            font-size: 13px
+            font-weight: 500
+            cursor: default
+            display: flex
+            justify-content: flex-end
+
+        .timezone
+            font-size: 13px
+            cursor: default
+
+        .msg
+            font-size: 13px
+            cursor: default
+
+        .msg2
+            font-size: 13px
+            text-decoration: underline
+            cursor: pointer
+
+    .verified2
+        color: #e6cc00
+        width: 100%
+        max-width: 1.1rem
+        max-height: 1.1rem
+
+.headerHoverImg
+    width: 100%
+    max-width: 40px !important
+    height: 40px !important
+    border-radius: 50%
+    background-color: #ccc
+
+.headerHover
+    width: 100%
+    display: flex
+    padding-left: 8px
+    flex-direction: column
+
+    span
+        font-size: 13px !important
+
+    .Username
+        display: flex
+        align-items: center
+        gap: 3px
+        height: 20px
+
+        a
+            width: auto
+
+        span
+            font-size: 15px !important
+            margin: 0px
+            font-weight: bold
+            height: 21px
+            cursor: pointer
+
+        svg
+            width: 1rem
+            height: 1rem
+
+        button
+            cursor: default
+
+        .verified1
+            width: 100%
+            max-width: 1.1rem
+            max-height: 1.1rem
+            color: #395FEA
+
+.error-text
+    font-size: 14px
+    font-weight: 600
+    color: hsl(var(--red))
+
+.loadingPage
+    position: fixed
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 2
+
+#Cookie
+    display: flex
+    flex-direction: column
+    padding: 17px
+    font-size: 14px
+    gap: 10px
+    left: 0
+    position: fixed
+    box-shadow: 1px -4px 10px 0px #3535353d
+    width: 100%
+    z-index: 5
+    bottom: 0
+
+    p
+        cursor: default
+
+    .buttons
+        display: flex
+        gap: 8px
+        align-items: center
+
+        button
+            border-radius: 25px
+
+        .button2
+            padding: 0.6rem 0.7rem
+            background-color: #ccc
+            color: #000
+            border-radius: 25px
+
+.noheaderMenu .headerMenu
+    margin-top: 0px
+    min-height: 100vh
+
+.info-alert
+    display: flex
+    align-items: center
+    width: 100%
+    cursor: default
+    gap: 6px
+    border-width: 1px
+    padding: 10px
+    border-radius: 7px
+    font-size: 14px
+
+    a
+        font-weight: 600
+        text-decoration: underline
+
+.NoItems
+    display: flex
+    width: 100%
+    text-align: center
+    font-size: 14px
+    font-weight: 600
+    padding: 15px
+    cursor: default
+    height: 50vh
+    justify-content: center
+
+.Expendable 
+    span
+        font-weight: 600
+        cursor: pointer
+        color: #395FEA
+
+.titlePage
+    width: 100%
+    padding: 1rem 0.75rem
+    font-weight: bold
+    cursor: default
+    font-size: 18px
+
+.tag-container
+    gap: 10px
+    display: flex
+    flex-direction: column
+
+    .tag-list
+        display: flex
+        flex-wrap: wrap
+        gap: 9px
+
+        .tag
+            padding: 0px 8px
+            background-color: #ccc
+            color: #000
+            border-radius: 6px
+            display: flex
+            gap: 5px
+            cursor: default
+            font-size: 14px
+
+        .tag-close
+            cursor: pointer
+            font-weight: bold
+
+    span
+        width: max-content
+
+#Home
+    .Menu .Home
+        color: #395FEA
+
+    .Recommended
+        padding: 3px
+        margin-top: 15px
+        border-top: 1px solid #ccc
+        border-bottom: 1px solid #ccc
+
+        .title
+            padding: 8px 13px
+            FONT-WEIGHT: BOLD
+            cursor: default
+            font-size: 19px
+
+        .userItem
+            gap: 9px
+            display: flex
+            align-items: center
+            padding: 10px 13px
+
+            h1
+                font-size: 15px
+                margin: 0px
+                font-weight: bold
+                height: 21px
+
+            span
+                font-size: 13px
+                height: 20px
+
+            .Details
+                gap: 0
+                display: grid
+
+                .followers
+                    font-weight: 500
+
+                .Username
+                    display: flex
+                    align-items: center
+                    gap: 3px
+                    height: 20px
+
+                    button
+                        cursor: default
+
+                    .verified1
+                        width: 100%
+                        max-width: 1.1rem
+                        max-height: 1.1rem
+                        color: #395FEA
+
+            a
+                display: flex
+                gap: 8px
+                align-items: center
+
+            img
+                width: 40px
+                height: 40px
+                border-radius: 50%
+                background-color: #ccc
+
+    @media (max-width: 600px)
+        .Header
+            box-shadow: none
+
+#ADS
+    width: 100%
+    display: none
+    // display: flex
+    background-color: hsl(var(--accent))
+    padding: 7px
+    flex-direction: column
+    align-items: center
+    gap: 5px
+
+    span
+        font-size: 13px
+        font-weight: 600
+        cursor: default
+
+#NewPost 
+    .Menu .NewPost
+        color: #395FEA
+
+    button
+        font-size: 15px
+        border-radius: 20px
+
+    input[type="file"]
+        width: 80%
+
+    .titleGroup
+        font-size: 18px
+        font-weight: 600
+
+        b
+            font-weight: bold
+
+    p
+        font-size: 14px
+        padding: 6px 0px
+        cursor: default
+        
+        @media (max-width: 400px)
+            font-size: 11px
+
+        a
+            text-decoration: underline
+            font-weight: 500
+
+    .filesUploads
+        display: flex
+        align-items: center
+        gap: 4px
+
+        .buttonUpload
+            display: flex
+            padding: 6px 8px
+            width: max-content
+            height: 36px
+            gap: 6px
+            border-radius: 25px
+            cursor: pointer
+
+        .removeFiles
+            cursor: pointer
+
+        input
+            display: none
+
+        span
+            cursor: default
+
+        p
+            margin: 0px
+            padding: 0px
+
+    .uploads
+        display: flex
+        flex-direction: row
+        overflow-y: auto
+        gap: 14px
+
+        .uploadItem
+            width: 240px
+            height: 191px
+
+            img
+                width: 240px
+                height: 191px
+                max-width: max-content
+                border-radius: 10px
+
+            .video
+                width: 240px
+                height: 191px
+                
+                video
+                    width: 100%
+                    height: 100%
+
+    .info-alert
+        width: auto
+        margin-top: 15px
+
+        span
+            font-size: 13px
+
+    .thumbPost
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #ccc
+        width: 70%
+        min-height: 200px
+
+        input
+            display: none
+
+        @media (max-width: 600px)
+            min-height: 150px
+
+        .buttonUploadThumb
+            position: absolute
+            padding: 19px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #fff
+            background-color: #00000073
+            transition: 0.2s
+            cursor: pointer
+
+            @media (max-width: 600px)
+                padding: 13px
+
+        .buttonUploadThumb:hover
+            color: #fff
+            background-color: #000000a4
+
+    .quill
+        gap: 7px
+        display: grid
+
+        p
+            cursor: auto
+            font-size: 14px
+
+        .ql-editor
+            padding-top: 0.5rem
+            padding-bottom: 0.5rem
+            padding-left: 0.75rem
+            padding-right: 0.75rem
+
+        .ql-toolbar.ql-snow
+            border-radius: 6px
+            border: 1px solid
+            border-color: hsl(214.3 31.8% 91.4%)
+
+            button
+                background: #fff !important
+                border-radius: 17px
+
+            .ql-formats
+                margin-right: 15px
+                gap: 5px
+                display: inline-flex
+
+        .ql-container.ql-snow
+            border: 1px solid
+            border-color: hsl(214.3 31.8% 91.4%)
+            border-radius: 6px
+            max-width: 625px
+
+#More 
+    .Menu .More
+        color: #395FEA
+
+    .Header2
+        border-bottom-width: 1px
+
+#Lang
+    .EditHeader
+        width: 100%
+        padding: 15px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+
+        h1
+            width: 100%
+            font-size: 1.1rem
+            font-weight: bold
+            cursor: default
+
+.SearchMenu .Menu .Search
+    color: #395FEA
+
+#Report
+    select
+        border-width: 1px
+        width: 100%
+        padding: 9px 7px
+        border-radius: 5px
+        border-color: hsl(var(--input))
+        font-size: 0.875rem
+        font-weight: 600

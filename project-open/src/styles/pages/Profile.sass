@@ -1,0 +1,124 @@
+#Profile
+    .headerUser
+        width: 100%
+        padding: 22px 15px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        gap: 16px
+        border-bottom: 1px solid #ccc
+
+        .hu-details1
+            display: flex
+            align-items: center
+            gap: 10px
+            cursor: default
+
+            img
+                width: 80px
+                height: 80px
+                border-radius: 50%
+
+            .photo-story
+                border: 3px solid #395FEA
+                border-radius: 50%
+                cursor: pointer
+
+                img
+                    border: 2px solid #fff
+                    background-color: #ccc
+
+        .hu-details2
+            display: grid
+
+            .Username
+                display: flex
+                align-items: center
+                gap: 3px
+                height: 20px
+
+                .Name span
+                    font-weight: bold
+                    font-size: 16px
+                    margin: 0
+
+                button
+                    cursor: default
+
+                .verified1
+                    width: 100%
+                    max-width: 1.1rem
+                    max-height: 1.1rem
+                    color: #395FEA
+
+            span
+                font-size: 14px
+
+            .hu-buttons
+                display: flex
+                gap: 5px
+                margin-top: 6px
+
+                button
+                    padding: 2px 10px
+                    border-radius: 22px
+                    font-size: 14px
+                    font-weight: 600
+                    border: 1px solid
+
+                .buttonFollow
+                    background-color: #395FEA
+                    border-color: #395FEA
+                    color: #fff
+
+        .hu-details3
+            gap: 9px
+            display: flex
+            flex-direction: column
+
+            .hu-numbers
+                font-size: 14px
+                display: flex
+                gap: 7px
+                font-weight: 500
+                cursor: default
+
+            p
+                font-size: 13px
+                white-space: pre-wrap
+                line-height: 17px
+                cursor: default
+                overflow: hidden
+                text-overflow: ellipsis
+
+                a
+                    color: #395FEA
+
+            .following-you
+                font-size: 13px
+                font-weight: 500
+                padding: 3px 8px
+                background-color: #ccc
+                color: #000
+                border: none
+                border-radius: 16px
+                margin-top: 6px
+                cursor: default
+
+    .tagsFeatured
+        display: flex
+        align-items: center
+        gap: 7px
+        justify-content: flex-start
+        width: 100%
+        padding: 10px 14px
+        overflow-x: auto
+
+        button
+            padding: 11px
+            height: 32px
+            font-weight: 600
+
+    .thumbGroup
+        height: 220px
+        background-color: #ccc

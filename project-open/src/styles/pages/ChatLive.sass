@@ -1,0 +1,176 @@
+#ChatLive
+    .Main
+        display: flex
+        flex-direction: column
+        min-height: 100vh
+
+    [data-tooltip]
+        justify-content: center
+
+    .Header
+        display: flex
+        justify-content: flex-start
+        padding: 0px 12px
+        padding-top: 7px
+        gap: 10px
+        cursor: default
+        align-items: center
+        border-bottom: 1px solid #d6e0ea
+
+        a
+            display: flex
+
+        span
+            display: flex
+            align-items: center
+            font-size: 16px
+            font-weight: bold
+            gap: 3px
+            border-bottom: 3px solid
+            border-color: transparent
+            line-height: 30px
+
+        svg
+            font-size: 18px
+
+    .loadingPage
+        position: absolute
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .ChatComments
+        display: flex
+        flex-direction: column-reverse
+        padding: 12px
+        padding-right: 0
+        gap: 13px
+        overflow-y: scroll
+        flex: 1
+        flex-basis: 1e-9px
+
+        svg
+            font-size: 19px !important
+            margin-right: 3px
+
+        .Name
+            flex: 1
+            cursor: auto
+
+        .Donate
+            display: flex
+            align-items: center
+            gap: 2px
+            background-color: #FF7A00
+            padding: 2px 7px
+            margin-right: 10px
+            border-radius: 13px
+            font-size: 13px
+            font-weight: 500
+            margin-bottom: 6px
+            cursor: default
+
+        .dropdown-toggle
+            width: 19px
+            height: 19px
+            border-radius: 50%
+            padding: 4px
+            margin: 0px
+            transition: 0.5s
+            
+        .dropdown-menu li
+            font-weight: 500
+            color: #000
+
+    #CommentLive
+        .Container
+            margin-bottom: 0
+
+        .Avatar img
+            width: 30px
+            max-width: max-content
+            height: 30px
+            margin-top: 5px
+            border-radius: 50%
+            cursor: pointer
+
+        .Details
+            gap: 0px
+
+    .NewComment 
+        display: flex 
+        flex-direction: column
+        justify-content: center
+        gap: 8px 
+        min-height: 50px
+        margin-bottom: 0px 
+        padding: 11px
+
+        form 
+            display: flex 
+            align-items: center 
+            width: 100% 
+            margin: 0 
+
+            input 
+                border: none
+                border-bottom: 1px solid #a1a1a1 
+                background-color: transparent 
+                outline: none 
+                margin-right: 7px 
+                width: 100% 
+                font-size: 14px
+
+            button
+                background: none
+                border: none
+                padding: 0
+
+            svg
+                padding: 4px 4px
+                border-radius: 50% 
+                transition: 0.3s 
+                cursor: pointer 
+
+            i:hover 
+                background-color: #dddddd 
+
+            input:focus 
+                border-color: #395FEA 
+
+        .limitText
+            font-size: 13px
+            font-weight: 500
+            cursor: default
+
+        .countText
+            font-size: 13px
+            font-weight: 500
+            cursor: default
+            width: 100%
+            text-align: left
+
+    .LoginChat
+        font-size: 15px
+        padding: 4px
+        cursor: default
+
+        a
+            color: #FF7A00
+            text-decoration: underline
+
+.dark 
+    .NewComment
+        background-color: #030816
+
+        svg:hover
+            background-color: hsl(var(--accent))
+
+.light 
+    .NewComment
+        background-color: #f1f1f1
+
+    .NewComment svg:hover
+        background-color: #ccc

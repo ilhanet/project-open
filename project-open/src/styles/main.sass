@@ -1,0 +1,63 @@
+*
+    font-family: 'Inter', sans-serif
+    font-feature-settings: 'liga' 1, 'calt' 1
+
+h1, h2, h3
+    margin: 0
+    margin-bottom: 2px
+
+a
+    text-decoration: none
+    color: inherit
+    width: max-content
+
+hr
+    width: 100%
+
+button
+    outline: none    
+
+.fx1
+    flex: 1
+
+.border-t
+    border-top-width: 1px
+
+.Accordion
+    .buttonAccordion
+        cursor: pointer
+        transition: 0.2s
+
+    .buttonAccordion:hover
+        background-color: #f1f1f1
+
+    .accordionItem
+        width: 100%
+        align-items: center
+        display: flex
+        font-size: 15px
+        font-weight: 500
+        transition: 0.3s
+        text-align: left
+
+        button
+            width: 100%
+            justify-content: flex-start
+            display: flex
+            padding: 1rem 0.75rem
+
+    .accordionItem:hover
+        background-color: hsl(var(--accent))
+    
+.dark
+    .buttonAccordion:hover
+        background: hsl(222.2 84% 4.9%)
+
+div[role="menuitem"] 
+    gap: 6px
+    display: flex
+    cursor: pointer
+
+    svg
+        width: 1.2rem
+        height: 1.2rem

@@ -1,0 +1,117 @@
+#Comments
+    .title
+        font-size: 16px
+        font-weight: 600
+        cursor: default
+
+    .focus-visible\:ring-offset-2:focus-visible 
+        --tw-ring-offset-width: none
+
+    .NewComment
+        display: flex
+        gap: 0.5rem
+        padding: 0
+        padding-top: 0.5rem
+        padding-bottom: 0.5rem
+
+        textarea
+            resize: none
+            height: 80px
+            min-height: auto
+            border-radius: 15px
+
+        button
+            padding: 7px
+            width: 35px
+            height: 35px
+
+            svg
+                width: 21px
+
+        .inputComment
+            width: 100%
+            gap: 0.5rem
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+    
+    .Comment
+        gap: 9px
+        display: flex
+        align-items: flex-start
+        padding: 10px 0px
+
+        .Details
+            width: 100%
+            display: grid
+
+            .text
+                white-space: pre-wrap
+                font-weight: 500
+                font-size: 14px
+                line-height: 17px
+                cursor: default
+
+            .Username
+                display: flex
+                align-items: center
+                gap: 4px
+                height: 20px
+                margin-bottom: 3px
+
+                a
+                    width: auto
+
+                h1
+                    margin: 0
+
+                    span
+                        font-size: 14px
+                        margin: 0px
+                        font-weight: bold
+                        height: 21px
+
+                span
+                    font-size: 13px
+
+                svg
+                    max-height: 15px
+                    max-width: 15px
+                    width: 100%
+
+                button
+                    cursor: default
+
+                .verified1
+                    color: #395FEA
+
+            .commentFooter
+                display: flex
+                gap: 13px
+                margin-top: 4px
+
+                .Item
+                    display: flex
+                    width: max-content
+                    gap: 3px
+                    font-size: 13px
+                    font-weight: 600
+                    align-items: center
+                    cursor: pointer
+
+                    svg
+                        color: #395FEA
+                        width: 16px
+                        height: 16px
+
+                .cursorDefault
+                    cursor: default
+
+        a
+            width: max-content
+
+    img
+        width: 39px
+        height: 35px
+        border-radius: 50%
+        background-color: #ccc

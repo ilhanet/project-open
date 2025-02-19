@@ -1,0 +1,9 @@
+{
+    "name": "Ilhanet",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }
